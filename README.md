@@ -6,15 +6,14 @@ Thanks to woxxy for https://github.com/woxxy/MySQL-backup-to-Amazon-S3. That was
 
 Use in tandem with MySQL-backup-to-Amazon-S3 for a slick WordPress, Drupal, etc. backup solution on AWS.
 
-##s3cmd setup##
+##setup##
 
-###On Ubuntu:###
-1.  <pre>sudo apt-get install s3cmd</pre>
-2.  <pre>s3cmd --configure</pre> (this will require some settings from your AWS account)
+1.  Install s3cmd <pre>sudo apt-get install s3cmd</pre>
+2.  Configure s3cmd <pre>s3cmd --configure</pre> (this will require some settings from your AWS account)
 3.  Create a bucket in S3 with the AWS console or <pre>s3cmd mb s3://unique-bucket_name</pre>
 4.  put the script on your server: <pre>wget https://raw.github.com/ahardin/s3-backup/master/s3-backup-app.sh</pre>
 5.  make changes as indicated by comments
 6.  run the script or add it to crontab
 
-###Other platforms###
+###s3cmd info###
 http://s3tools.org/s3cmd
